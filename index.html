@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Calculator-main">
+        <textarea name="text" id="result" readonly></textarea>
+        <div class="buttons">
+            <button class="n" onclick="clearResult()">C</button>
+            <button class="a" onclick="appendCharacter('%')">%</button>
+            <button class="p" onclick="deleteLastCharacter('X')">X</button>
+            <button class="p" onclick="appendCharacter('/')">/</button>
+            <button class="a" onclick="appendCharacter('7')">7</button>
+            <button class="b" onclick="appendCharacter('8')">8</button>
+            <button class="c" onclick="appendCharacter('9')">9</button>
+            <button class="l" onclick="appendCharacter('*')">*</button>
+         
+            <button class="e" onclick="appendCharacter('4')">4</button>
+            <button class="f" onclick="appendCharacter('5')">5</button>
+            <button class="g" onclick="appendCharacter('6')">6</button>
+            <button class="h" onclick="appendCharacter('-')">-</button>
+           
+            
+            <button class="i" onclick="appendCharacter('1')">1</button>
+            <button class="j" onclick="appendCharacter('2')">2</button>
+            <button class="k" onclick="appendCharacter('3')">3</button>
+            <button class="d" onclick="appendCharacter('+')">+</button>
+            
+            <button class="m" onclick="appendCharacter('00')">00</button>
+            <button class="m" onclick="appendCharacter('0')">0</button>
+            <button class="m" onclick="appendCharacter('.')">.</button>
+            
+            <button class="o" onclick="calculateResult()">=</button>
+            
+            
+           
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
